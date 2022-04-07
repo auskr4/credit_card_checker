@@ -28,7 +28,7 @@ function validateCred(arr) {
     //console.log(arr);
     //let arraycup = arr;
     //splice out value @ last index, reverse array, then double every every even index
-    let arrsplrev = [];
+    let arrsplrev = []; 
     let spliced = arr.splice(-1, 1);
     arrsplrev = arr.reverse(); //spliced and reversed
     console.log(arr); //arr is affected at this point 
