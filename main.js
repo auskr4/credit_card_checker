@@ -25,13 +25,10 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 //const valid3 = [3, 7, 1, 6, 1, 2, 0, 1, 9, 9, 8, 5, 2, 3, 6]
 
 function validateCred(arr) {
-    //console.log(arr);
-    //let arraycup = arr;
     //splice out value @ last index, reverse array, then double every every even index
     let arrsplrev = []; 
     let spliced = arr.splice(-1, 1);
     arrsplrev = arr.reverse(); //spliced and reversed
-    console.log(arr); //arr is affected at this point 
     for (i=0; i < arrsplrev.length; i++) {
         //console.log(`Index: ${i}  Value:${arrsplrev[i]}`)
         if (i % 2 === 0) {
@@ -44,7 +41,6 @@ function validateCred(arr) {
                 //console.log(`reduced num = ${arrsplrev[i]}`);
             }
         }
-        //console.log(arr); //in debugging the value here is the array spliced and reversed
     }
     //push spliced first int back into the new arrayand sum
     arrsplrev.push(spliced[0]); 
