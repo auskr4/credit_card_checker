@@ -60,12 +60,12 @@ function validateCred(arr) {
 function findInvalidCards(arr2) {
     const invalidCards = [];
     for (j=0; j < arr2.length; j++) {
-        //console.log(arr2[j]);
+        console.log(arr2[j]);
         if (validateCred(arr2[j]) === false) {
-            console.log(`this one was invalid and will be pushed to invalidCards`)
+            console.log(`this number is invalid and will be pushed to the invalidCards array`)
             invalidCards.push(arr2[j]);
         } else {
-            console.log(`this one was valid, done.`)
+            console.log(`this number is valid.`)
         }
     }
     console.log(`done with findInvalidCards, returning invalidCards:`)
